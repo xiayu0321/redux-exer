@@ -8,13 +8,13 @@
 <body>
 <div>
     <p id="text"></p>
-    
+
     <button id="view">show</button>
 </div>
 <script>
     function getShow(state,action) {
         if(state === undefined){
-            return 'please click the button';
+            return 'please click the button'
         }
         switch (action.type){
             case 'text':

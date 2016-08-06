@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BasicExer</title>
+    <script src="https://npmcdn.com/redux@latest/dist/redux.min.js"></script>
+</head>
+<body>
+<div>
+    <p id="text"></p>
+    <button id="view">show</button>
+</div>
+<script>
+    function getShow(state,action) {
+        if(state === undefined){
+            return 'please click the button';
+        }
+        switch (action.type){
+            case 'text':
+                return state = 'hello world'
+        }
+    }
+
+    var store = Redux.createStore(getShow)
+    var valueEl = document.getElementById('text')
+    function render() {
+        valueEl.innerHTML = store.getState().toString()
+    }
+
+    render()
+    store.subscribe(render)
+
+    document.getElementById('view')
+            .addEventListener('click', function () {
+                store.dispatch({ type: 'text' })
+            })
+
+</script>
+
+</body>
+</html>

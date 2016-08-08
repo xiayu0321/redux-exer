@@ -1,0 +1,22 @@
+{
+  "name": "golden-data-react-redux",
+  "homepage": "https://github.com/xiayu0321/redux-exer",
+  "authors": [
+    "xiayu0321 <xiayugogo0321@163.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.3.0",
+    "babel": "^5.8.38",
+    "jquery": "^3.1.0"
+  }
+}
